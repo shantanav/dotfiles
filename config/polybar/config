@@ -1,0 +1,192 @@
+[colors]
+background = #000000
+background-alt = #000000
+foreground = #FCE8C3
+foreground-alt = #918175
+primary = #FFFFFF
+secondary = #000000
+alert = #F75341
+
+[settings]
+format-foreground =
+format-underline = ${colors.primary}
+format-background = ${colors.background-alt}
+format-padding = 1
+format-overline =
+format-margin = 0
+format-offset =
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+[bar/bar1]
+override-redirect = false
+wm-restack = i3wm
+enable-ipc = true
+fixed-center = false
+bottom = false
+separator =
+
+width = 100%
+height = 32
+offset-x = 0
+offset-y = 0
+radius = 0.0
+
+underline-size = 3
+overline-size = 0
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+
+module-margin-left = 0
+module-margin-right = 1
+
+font-0 = JetBrainsMonoMedium:pixelsize=10;
+font-1 = HackNerdFont:pixelsize=10;
+font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
+font-3 = IPAGothic:fontformat=truetype:pixelsize=10:antialias=false;
+font-4 = FontAwesome:style=Regular:pixelsize=10:antialias=false;
+
+modules-left = workspaces
+modules-right = pacman-packages cpu-usage memory volume battery time
+
+tray-position = right
+tray-padding = 1
+tray-background = ${colors.background-alt}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1.0
+
+cursor-click = pointer
+cursor-scroll = default
+
+[module/workspaces]
+type = internal/i3
+
+pin-workspaces = true
+strip-wsnumbers = false
+index-sort = false
+enable-click = true
+enable-scroll = true
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = false
+ws-icon-0 = 1
+ws-icon-1 = 2
+ws-icon-2 = 3
+ws-icon-3 = 4
+ws-icon-4 = 5
+ws-icon-5 = 6
+ws-icon-6 = 7
+ws-icon-7 = 8
+ws-icon-8 = 9
+ws-icon-9 = 10
+format = <label-state> <label-mode>
+
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-foreground = #000000
+label-mode-background = #FFBB00
+label-focused = %icon% %name%
+label-focused-background = ${colors.primary}
+label-focused-foreground = ${colors.alert}
+label-focused-underline = ${colors.primary}
+label-focused-padding = 2
+label-unfocused = %icon% %name%
+label-unfocused-padding = 2
+label-unfocused-background = ${colors.background}
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-underline = ${colors.secondary}
+label-visible = %icon% %name%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = 2
+label-urgent = %icon% %name%
+label-urgent-background = ${self.label-focused-background}
+label-urgent-foreground = #db104e
+label-urgent-padding = 2
+
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+[module/pacman-packages]
+type = custom/ipc
+hook-0 = sudo pacman -Qu | wc -l
+format-prefix = " "
+initial = 1
+
+[module/memory]
+type = internal/memory
+label = "%percentage_used%%"
+click-left = $TERMINAL -e htop &
+interval = 10
+format-prefix = " "
+
+[module/cpu-usage]
+type = internal/cpu
+format = <label>
+label = "%percentage%%"
+label-padding = 1
+click-left = $TERMINAL -e htop &
+interval = 2
+format-prefix = "CPU: "
+
+[module/volume]
+type = internal/alsa
+format-volume-prefix = "Volume: "
+format-volume-prefix-padding = 1
+format-volume-prefix-foreground = ${colors.bright-green}
+format-volume = <label-volume>
+format-volume-padding = 0
+format-volume-background = ${color.bg-lighter}
+label-volume = "%percentage%% "
+
+format-muted = <label-muted>
+format-muted-prefix = "Volume (muted): "
+format-muted-prefix-padding = 1
+format-muted-prefix-foreground = ${colors.bright-green}
+label-muted = "%percentage%% "
+label-muted-padding = 0
+format-prefix = "Volume: "
+
+[module/time]
+type = custom/script
+exec = date '+%d/%m/%Y %H:%M:%S'
+click-left = thunderbird &
+label = "%output%"
+interval = 5
+
+[module/battery]
+type = internal/battery
+full-at = 99
+time-format = %H:%M
+battery = BAT0
+adapter = AC
+
+format-charging = <label-charging>
+format-charging-prefix = " "
+format-charging-prefix-padding = 1
+format-charging-prefix-foreground = ${colors.yellow}
+format-charging-padding = 0
+label-charging = "%percentage%% "
+label-charging-padding = 1
+
+format-discharging = <label-discharging>
+format-discharging-prefix = "Battery (Discharging):"
+format-discharging-prefix-padding = 1
+format-discharging-prefix-foreground = ${colors.green}
+format-discharging-padding = 0
+label-discharging = "%percentage%% "
+label-discharging-padding = 1
+
+format-full = <label-full>
+format-full-prefix = " "
+format-full-prefix-padding = 1
+format-full-prefix-foreground = ${colors.bright-green}
+format-full-padding = 0
+label-full = "%percentage%% "
+label-full-padding = 1

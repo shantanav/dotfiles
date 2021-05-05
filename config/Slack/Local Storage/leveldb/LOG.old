@@ -1,0 +1,9 @@
+2021/04/12-10:50:13.819 120e Reusing MANIFEST /home/shantanav/.config/Slack/Local Storage/leveldb/MANIFEST-000001
+2021/04/12-10:50:13.824 120e Recovering log #103
+2021/04/12-10:50:13.826 120e Reusing old log /home/shantanav/.config/Slack/Local Storage/leveldb/000103.log 
+2021/04/12-10:51:15.925 121f Level-0 table #107: started
+2021/04/12-10:51:15.928 121f Level-0 table #107: 20992 bytes OK
+2021/04/12-10:51:15.931 121f Delete type=0 #103
+2021/04/12-11:11:15.919 1386 Level-0 table #109: started
+2021/04/12-11:11:15.922 1386 Level-0 table #109: 17079 bytes OK
+2021/04/12-11:11:15.924 1386 Delete type=0 #106

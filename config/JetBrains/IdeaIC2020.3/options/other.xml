@@ -1,0 +1,7 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+  </component>
+</application>
