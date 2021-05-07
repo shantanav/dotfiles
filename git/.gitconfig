@@ -7,8 +7,6 @@
 	insteadOf = https://github.com
 [user]
     signingkey = EC06810DF0DAB25D31E5BD0ED16BC56F90E8BBE4
-[commit]
-	gpgsign = true
 [gpg]
 	program = gpg2
 [pull]
