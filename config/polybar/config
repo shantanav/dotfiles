@@ -168,7 +168,7 @@ battery = BAT0
 adapter = AC
 
 format-charging = <label-charging>
-format-charging-prefix = " "
+format-charging-prefix = "Battery (Charging) : "
 format-charging-prefix-padding = 1
 format-charging-prefix-foreground = ${colors.yellow}
 format-charging-padding = 0
@@ -176,7 +176,7 @@ label-charging = "%percentage%% "
 label-charging-padding = 1
 
 format-discharging = <label-discharging>
-format-discharging-prefix = "Battery (Discharging):"
+format-discharging-prefix = "Battery (Discharging) : "
 format-discharging-prefix-padding = 1
 format-discharging-prefix-foreground = ${colors.green}
 format-discharging-padding = 0
@@ -184,7 +184,7 @@ label-discharging = "%percentage%% "
 label-discharging-padding = 1
 
 format-full = <label-full>
-format-full-prefix = " "
+format-full-prefix = "Battery (Full) : "
 format-full-prefix-padding = 1
 format-full-prefix-foreground = ${colors.bright-green}
 format-full-padding = 0

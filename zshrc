@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/shantanav/.config/oh-my-zsh"
+export ZSH="/home/ss9415/.config/oh-my-zsh"
 export BROWSER=$(which qutebrowser)
 
 BULLETTRAIN_PROMPT_CHAR=
@@ -131,14 +131,9 @@ alias devsse='ssh ss9415@rit-sse.dev'
 alias vims='vim -S Session.vim'
 alias rm='rm -i'
 alias mv='mv -i'
-alias dsd='cd ~/Documents/school/CMPE160/'
-alias comm='cd ~/Documents/school/COMM253/'
-alias algo='cd ~/Documents/school/CSCI261/'
-alias enterprise='cd ~/Documents/school/SWEN343/'
-alias 444='cd ~/Documents/school/SWEN444/'
-alias resume='cd ~/Documents/projects/resume'
+alias resume='cd ~/Documents/resume'
 alias website='cd ~/Documents/website/'
-alias os='cd ~/Documents/projects/os-dev-env/'
+alias os='cd ~/Documents/os-dev-env/'
 alias kim='touch /etc/redstar-release; neofetch; sudo rm -f /etc/redstar-release'
 alias pls='echo "*moan*"'
 alias meow='curl cat.thatlinuxbox.com'
@@ -164,5 +159,8 @@ function commit() {
 }
 
 bindkey -v
-source /usr/share/nvm/init-nvm.sh
-source /home/shantanav/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/ss9415/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

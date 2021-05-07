@@ -2,7 +2,6 @@ docker
 docker-compose
 figlet
 hollywood
-kitty
 nvm
 polybar
 qutebrowser
