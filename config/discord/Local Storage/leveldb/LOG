@@ -1,18 +1,10 @@
-2021/05/06-20:03:03.619 12b9 Reusing MANIFEST /home/ss9415/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2021/05/06-20:03:03.621 12b9 Recovering log #13
-2021/05/06-20:03:03.621 12b9 Reusing old log /home/ss9415/.config/discord/Local Storage/leveldb/000013.log 
-2021/05/06-20:20:39.686 40f0 Level-0 table #17: started
-2021/05/06-20:20:39.690 40f0 Level-0 table #17: 21007 bytes OK
-2021/05/06-20:20:39.692 40f0 Delete type=0 #13
-2021/05/06-20:31:05.497 40f0 Level-0 table #19: started
-2021/05/06-20:31:05.503 40f0 Level-0 table #19: 29237 bytes OK
-2021/05/06-20:31:05.506 40f0 Delete type=0 #16
-2021/05/06-20:31:05.506 40f0 Compacting 4@0 + 1@1 files
-2021/05/06-20:31:05.511 40f0 Generated table #20@0: 11 keys, 23425 bytes
-2021/05/06-20:31:05.511 40f0 Compacted 4@0 + 1@1 files => 23425 bytes
-2021/05/06-20:31:05.513 40f0 compacted to: files[ 0 1 1 0 0 0 0 ]
-2021/05/06-20:31:05.513 40f0 Delete type=2 #14
-2021/05/06-20:31:05.513 40f0 Delete type=2 #17
-2021/05/06-20:31:05.513 40f0 Delete type=2 #19
-2021/05/06-20:31:05.513 40f0 Delete type=2 #11
-2021/05/06-20:31:05.513 40f0 Delete type=2 #8
+2021/05/08-21:37:15.111 f60 Reusing MANIFEST /home/ss9415/dotfiles/config/discord/Local Storage/leveldb/MANIFEST-000001
+2021/05/08-21:37:15.112 f60 Recovering log #21
+2021/05/08-21:37:15.112 f60 Reusing old log /home/ss9415/dotfiles/config/discord/Local Storage/leveldb/000021.log 
+2021/05/08-21:37:15.113 f60 Delete type=2 #22
+2021/05/08-21:39:22.255 1054 Level-0 table #23: started
+2021/05/08-21:39:22.263 1054 Level-0 table #23: 36692 bytes OK
+2021/05/08-21:39:22.265 1054 Delete type=0 #21
+2021/05/08-21:40:22.254 1054 Level-0 table #25: started
+2021/05/08-21:40:22.260 1054 Level-0 table #25: 26942 bytes OK
+2021/05/08-21:40:22.261 1054 Delete type=0 #22

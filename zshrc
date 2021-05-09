@@ -154,7 +154,7 @@ function te() {
 
 function commit() {
     git add -A
-    git commit -S -m $1
+    git commit -m $1
     git push origin
 }
 
